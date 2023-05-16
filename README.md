@@ -4,7 +4,7 @@ pybruh is a very epic (pointless) Python script that I made to randomly play loa
 ## Running the Program
 1. Clone the repository: `git clone https://github.com/jackmj1024/pybruh.git`
 2. Run `pybruh.py` in one of two ways:
-	- Execute `./pybruh.sh` to run in the Python virtual environment with all dependencies installed.
+	- Execute `./pybruh.sh` to run in the Python virtual environment with all dependencies installed (Linux only).
 	- Execute `python pybruh.py` directly after installing the following depencies:
 		- pydub: `pip install pydub`
 
@@ -19,6 +19,7 @@ pybruh is a very epic (pointless) Python script that I made to randomly play loa
 
 ## Planned Features (if I feel like it)
 - Support for more audio formats.
+- Windows bat file to run in virtual environment.
 - Binary to run the program as a normal terminal command.
 	- Pass in configuration as command arguments.
 	- ...or maybe just have a separate config file?
