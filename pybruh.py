@@ -9,7 +9,7 @@ from pydub.playback import play
 SOUND_DIRECTORY = os.path.abspath('sounds')  # Directory to load sounds from.
 MIN_INTERVAL = 5*60  # Minimum time between sounds in seconds.
 MAX_INTERVAL = 60*60  # Maximum time between sounds in seconds.
-SIGMOID = True
+SIGMOID = True  # Uses the alternative delay generater, ignores MIN_INTERVAL
 
 
 def get_valid_files(do_logging=False):
