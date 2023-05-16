@@ -1,5 +1,5 @@
 # pybruh
-pybruh is a very epic (pointless) Python script that I made to randomely play loaded sound files at random time intervals. It originated as a simple infinite loop that would occasionally play a bruh sound effect every few minutes while using my computer. I decided to expand it into this project after deciding that I wanted it to be able to play multiple different sound files.
+pybruh is a very epic (pointless) Python script that I made to randomly play loaded sound files at random time intervals. It originated as a simple infinite loop that would occasionally play a bruh sound effect every few minutes while using my computer. I decided to expand it into this project after deciding that I wanted it to be able to play multiple different sound files.
 
 ## Running the Program
 1. Clone the repository: `git clone https://github.com/jackmj1024/pybruh.git`
