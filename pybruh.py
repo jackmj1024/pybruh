@@ -51,7 +51,7 @@ def calculate_delay_time(max_seconds):
     x = math.e**x
     x = 1 + x
     x = max_seconds / x
-    return int(x)
+    return math.ceil(x)
 
 library = get_valid_files(True)
 do_random_loop(MIN_INTERVAL, MAX_INTERVAL, library, SIGMOID, True)
