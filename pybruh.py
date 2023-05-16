@@ -7,6 +7,7 @@ from pydub.playback import play
 
 
 SOUND_DIRECTORY = os.path.abspath('sounds')  # Directory to load sounds from.
+MIN_INTERVAL = 5*60  # Minimum time between sounds in seconds.
 MAX_INTERVAL = 60*60  # Maximum time between sounds in seconds.
 
 
@@ -32,9 +33,12 @@ def play_random_sound(options, do_logging=False):
         print('Played sound: ' + file)
 
 
-def do_random_loop(max_seconds, sounds, do_logging=False):
+def do_random_loop(min_seconds, max_seconds, sounds, sigmoid=True, do_logging=False):
     while True:
-        delay = calculate_delay_time(max_seconds)
+        if sigmoid:
+            delay = calculate_delay_time(max_seconds)
+        else:
+            delay = random.randint(min_seconds, max_seconds)
         if do_logging:
             print("Delay set to " + str(delay) + " seconds.")
         time.sleep(delay)
@@ -49,4 +53,4 @@ def calculate_delay_time(max_seconds):
     return int(x)
 
 library = get_valid_files(True)
-do_random_loop(MAX_INTERVAL, library, True)
+do_random_loop(MIN_INTERVAL, MAX_INTERVAL, library, True, True)
