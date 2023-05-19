@@ -17,7 +17,7 @@ pybruh is a very epic (pointless) Python script that I made to randomly play loa
 	- Edit the `MIN_INTERVAL` value at the top of `pybruh.py` to change the minimum delay time.
 	- Edit the `MAX_INTERVAL` value at the top of `pybruh.py` to change the maximum delay time.
 - You can enable `USE_SIGMOID` to use an alternative calculation method for the randomized delay.
- 	- This feature uses the [sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function) to calculate the delay. The curve for this function can be viewed on [this Desmos graph](https://www.desmos.com/calculator/rxvvgaqo4x)
+ 	- This feature uses the [sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function) to calculate the delay. The curve for this function can be viewed on [this Desmos graph](https://www.desmos.com/calculator/rxvvgaqo4x).
 
 ## Planned Features (if I feel like it)
 - Support for more audio formats.
