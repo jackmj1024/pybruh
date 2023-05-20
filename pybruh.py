@@ -39,7 +39,7 @@ def do_random_loop(min_seconds, max_seconds, sounds, sigmoid=True, do_logging=Fa
         if sigmoid:
             delay = calculate_delay_time(max_seconds)
         else:
-            delay = random.randint(min_seconds, max_seconds)
+            delay = random.uniform(min_seconds, max_seconds)
         if do_logging:
             print("Delay set to " + str(delay) + " seconds.")
         time.sleep(delay)
@@ -51,7 +51,7 @@ def calculate_delay_time(max_seconds):
     x = math.e**x
     x = 1 + x
     x = max_seconds / x
-    return math.ceil(x)
+    return x
 
 library = get_valid_files(True)
 do_random_loop(MIN_INTERVAL, MAX_INTERVAL, library, USE_SIGMOID, True)
